@@ -45,5 +45,4 @@ function cargarHabilidades() {
         contenedorHabilidades.innerHTML += skillHTML;
     });
 }
-
-document.addEventListener("DOMContentLoaded", cargarHabilidades);
+cargarHabilidades();

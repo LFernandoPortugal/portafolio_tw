@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis Proyectos</title>
+    <link href="./src/styles/output.css" rel="stylesheet" />
+    <script src="./src/scripts/scripts.js" defer></script>
+    <script src="./src/scripts/proyectos.js" defer></script>
+  </head>
+  <body class="bg-dark text-light font-sans">
+    <!-- Header -->
+    <header class="p-8">
+      <nav class="flex justify-between items-center">
+        <a href="index.html" class="text-2xl font-bold">
+          <img
+            src="./src/images/logo.png"
+            alt="logo de la página"
+            class="w-12 h-12 rounded-full shadow-lg"
+          />
+        </a>
+        <button
+          id="menu-toggle"
+          class="md:hidden flex items-center text-[#ffffff] hover:text-[#e3ff6a] transition-colors focus:outline-none"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-8 h-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+
+        <!-- Menú de navegación -->
+        <ul
+          id="nav-menu"
+          class="hidden md:relative md:flex md:justify-center gap-4 absolute top-20 md:top-0 left-0 w-full bg-dark md:bg-transparent py-4 px-6"
+        >
+          <li>
+            <a
+              href="#about"
+              class="text-[#ffffff] hover:text-[#e3ff6a] transition-colors block"
+              >SOBRE MI</a
+            >
+          </li>
+          <li>
+            <a
+              href="#skills"
+              class="text-[#ffffff] hover:text-[#e3ff6a] transition-colors block"
+              >HABILIDADES</a
+            >
+          </li>
+          <li>
+            <a
+              href="proyectos.html"
+              class="text-[#ffffff] hover:text-[#e3ff6a] transition-colors block"
+              >PROYECTOS</a
+            >
+          </li>
+        </ul>
+        <div
+          class="hidden md:flex md:static items-center cursor-pointer border border-[#ffffff] rounded-full pl-3 pr-1 py-1 hover:bg-[#a4ff7a] transition-colors"
+        >
+          <a href="#contact" class="text-[#ffffff] pr-1">CONTACTO</a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-7 h-7 text-[#1e293b] bg-highlight rounded-full p-1"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+            />
+          </svg>
+        </div>
+      </nav>
+    </header>
+
+    <section id="projects" class="py-20 px-8">
+      <h2 class="text-3xl font-bold text-center">
+        Los trabajos que he realizado
+      </h2>
+      <div
+        id="contenedor-proyectos"
+        class="grid justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto mt-8"
+      >
+        <!-- Los proyectos se cargan aquí -->
+      </div>
+    </section>
+
+    <footer class="bg-[#1e293b] text-[#ffffff] text-center py-8 mt-8">
+      <p>&copy; 2025 Luis Fernando Portugal. Todos los Derechos Reservados.</p>
+    </footer>
+  </body>
+</html>
