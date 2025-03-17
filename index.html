@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto portafolio</title>
+    <link href="./src/styles/output.css" rel="stylesheet" />
+    <script src="./src/scripts/habilidades.js" defer></script>
+    <script src="./src/scripts/scripts.js" defer></script>
+  </head>
+  <body class="bg-dark text-light font-sans">
+    <!-- Header -->
+    <header class="p-8">
+      <nav class="flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold">
+          <img
+            src="./src/images/logo.png"
+            alt="logo de la página"
+            class="w-12 h-12 rounded-full shadow-lg"
+          />
+        </a>
+        <button
+          id="menu-toggle"
+          class="md:hidden flex items-center text-[#ffffff] hover:text-[#e3ff6a] transition-colors focus:outline-none"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-8 h-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+
+        <!-- Menú de navegación -->
+        <ul
+          id="nav-menu"
+          class="hidden md:relative md:flex md:justify-center gap-4 absolute top-20 md:top-0  left-0 w-full bg-dark md:bg-transparent py-4 px-6"
+        >
+          <li>
+            <a
+              href="#about"
+              class="text-[#ffffff] hover:text-[#e3ff6a] transition-colors block"
+              >SOBRE MI</a
+            >
+          </li>
+          <li>
+            <a
+              href="#skills"
+              class="text-[#ffffff] hover:text-[#e3ff6a] transition-colors block"
+              >HABILIDADES</a
+            >
+          </li>
+          <li>
+            <a
+              href="#projects"
+              class="text-[#ffffff] hover:text-[#e3ff6a] transition-colors block"
+              >PROYECTOS</a
+            >
+          </li>
+        </ul>
+        <div
+          class="hidden md:flex md:static items-center cursor-pointer border border-[#ffffff] rounded-full pl-3 pr-1 py-1 hover:bg-[#a4ff7a] transition-colors"
+        >
+          <a href="#contact" class="text-[#ffffff] pr-1">CONTACTO</a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-7 h-7 text-[#1e293b] bg-highlight rounded-full p-1"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+            />
+          </svg>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="bg-gradient-main py-20 px-8 flex flex-wrap justify-center items-center text-center"
+    >
+      <div class="w-full mb-8">
+        <h1 class="sm:text-2xl md:text-4xl font-bold">
+          Yo soy <span class="text-[#a4ff7a]">Luis Fernando Portugal</span>
+        </h1>
+        <h2 class="sm:text-2xl md:text-4xl font-bold">
+          Desarrollador
+          <span class="border border-[#ffffff]/50 rounded px-2"
+            >Full Stack</span
+          >
+        </h2>
+      </div>
+      <div
+        class="flex flex-wrap md:flex-nowrap justify-center items-center gap-4"
+      >
+        <div class="w-full md:w-1/2 md:-rotate-8 lg:w-1/3">
+          <img
+            src="./src/images/client-review.jpg"
+            alt="Feedback de un cliente"
+            class="rounded-lg"
+          />
+        </div>
+        <div class="w-full md:w-1/2 md:rotate-8 md:order-3 lg:w-1/3">
+          <img
+            src="./src/images/expertise.png"
+            alt="Gráfico de habilidades"
+            class="rounded-lg"
+          />
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 flex flex-col items-center">
+          <img
+            src="./src/images/hero_profile.png"
+            alt="Foto de perfil"
+            class="max-w-[70%] h-auto filter drop-shadow-[-50px_100px_100px_rgba(255,255,0,0.5)]"
+          />
+          <a
+            href="#projects"
+            class="mt-4 px-6 py-2 bg-[#a4ff7a] text-[#0d1117] font-bold rounded-full hover:bg-[#e3ff6a] transition-colors"
+            >Mis Proyectos</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section
+      id="about"
+      class="py-20 px-8 flex flex-wrap md:flex-nowrap justify-center items-center text-center"
+    >
+      <div class="w-full order-1 md:order-2 md:w-1/2 mb-8">
+        <h2 class="text-3xl font-bold text-[#a4ff7a]">¿Quién soy?</h2>
+        <p class="mt-4">
+          Soy una persona que le atrae todo lo relacionado a la tecnología y el
+          desarrollo web. Me encanta aprender cosas nuevas y crear soluciones
+          practicando programación. Además, me gustan los videojuegos, películas
+          y series, dibujar y aprender idiomas como hobbies.
+        </p>
+        <a
+          href="#projects"
+          class="mt-4 px-6 py-2 bg-[#a4ff7a] text-[#0d1117] font-bold rounded-full hover:bg-[#e3ff6a] transition-colors inline-block"
+          >Mostrar mis Proyectos</a
+        >
+      </div>
+      <div class="flex w-full justify-center order-2 md:order-1 md:w-1/2 mb-8">
+        <img
+          src="./src/images/about_profile.png"
+          alt="foto del desarrollador"
+          class="w-1/2 md:w-1/3 lg:w-1/2 transform md:-rotate-12"
+        />
+      </div>
+      <div class="flex w-full justify-center order-3 md:order-3 md:w-1/2 mb-8">
+        <img
+          src="./src/images/hobby.jpg"
+          alt="pasatiempo"
+          class="w-1/2 md:w-1/3 lg:w-1/2 transform md:rotate-12"
+        />
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-8 flex flex-col items-center">
+      <h2 class="text-3xl font-bold">Mis habilidades</h2>
+      <div
+        id="contenedor-habilidades"
+        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-4xl mt-8"
+      >
+        <!-- Las habilidades se cargan aquí -->
+      </div>
+      <div class="text-center mt-8">
+        <h3 class="text-2xl">2 años de experiencia trabajando</h3>
+        <a
+          href="https://drive.google.com/file/d/18fLs6Lu-Th8z81FceC_7QzC8QLNgcMYK/view?usp=drive_link"
+          target="_blank"
+          class="mt-4 px-6 py-2 bg-[#a4ff7a] text-[#0d1117] font-bold rounded-full hover:bg-[#e3ff6a] transition-colors inline-block"
+          >Descargar mi CV</a
+        >
+      </div>
+    </section>
+
+    <!-- Additional Skills Section -->
+    <section
+      id="additional-skills"
+      class="py-20 px-8 bg-[#1e293b] rounded-lg mx-4"
+    >
+      <h3 class="text-2xl font-bold text-center">Habilidades adicionales</h3>
+      <div class="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto mt-8">
+        <img
+          src="./src/images/skills/premiere.png"
+          alt="icono de adobe premiere"
+          class="w-20 h-20 rounded-lg p-2 hover:scale-110 transition-transform"
+        />
+        <img
+          src="./src/images/skills/after-effects.png"
+          alt="icono de adobe after effects"
+          class="w-20 h-20 rounded-lg p-2 hover:scale-110 transition-transform"
+        />
+        <img
+          src="./src/images/skills/illustrator.png"
+          alt="icono de adobe illustrator"
+          class="w-20 h-20 rounded-lg p-2 hover:scale-110 transition-transform"
+        />
+        <img
+          src="./src/images/skills/photoshop.png"
+          alt="icono de adobe photoshop"
+          class="w-20 h-20 rounded-lg p-2 hover:scale-110 transition-transform"
+        />
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-8">
+      <h2 class="text-3xl font-bold text-center">
+        Los trabajos que he realizado
+      </h2>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto mt-8"
+      >
+        <div
+          class="bg-[#1e293b] rounded-lg p-4 hover:scale-105 transition-transform"
+        >
+          <img
+            src="./src/images/projects/proyecto1.png"
+            alt="Proyecto 1"
+            class="rounded-lg"
+          />
+          <h3 class="text-xl font-bold mt-4">
+            Página web para proyect de instituto Khipu
+          </h3>
+          <p class="mt-2">Elaborado con HTML, CSS y JavaScript</p>
+        </div>
+        <div
+          class="bg-[#1e293b] rounded-lg p-4 hover:scale-105 transition-transform"
+        >
+          <img
+            src="./src/images/projects/proyecto2.png"
+            alt="Proyecto 2"
+            class="rounded-lg"
+          />
+          <h3 class="text-xl font-bold mt-4">Página web sobre pokémon - BYU</h3>
+          <p class="mt-2">Elaborado con HTML, CSS y JavaScript</p>
+        </div>
+        <div
+          class="bg-[#1e293b] rounded-lg p-4 hover:scale-105 transition-transform"
+        >
+          <img
+            src="./src/images/projects/proyecto3.png"
+            alt="Proyecto 3"
+            class="rounded-lg"
+          />
+          <h3 class="text-xl font-bold mt-4">Tower defense en python - BYU</h3>
+          <p class="mt-2">Elaborado con Python</p>
+        </div>
+      </div>
+      <a
+        href="https://github.com/LFernandoPortugal?tab=repositories"
+        target="_blank"
+        class="mt-8 px-6 py-2 bg-[#a4ff7a] text-[#0d1117] font-bold rounded-full hover:bg-[#e3ff6a] transition-colors block text-center max-w-xs mx-auto"
+        >Mostrar mis proyectos</a
+      >
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      class="py-20 px-8 bg-[#ffffff] rounded-lg max-w-2xl mx-auto"
+    >
+      <h2 class="text-3xl font-bold text-[#1e293b] text-center">
+        Contáctame aquí
+      </h2>
+      <form class="flex flex-col gap-4 mt-8">
+        <input
+          type="text"
+          placeholder="Nombre"
+          class="p-2 border border-gray-300 rounded-lg bg-gray-200 text-[#1e293b] focus:border-[#e3ff6a] focus:ring-2 focus:ring-[#e3ff6a] outline-none"
+          required
+        />
+        <input
+          type="email"
+          placeholder="Correo"
+          class="p-2 border border-gray-300 rounded-lg bg-gray-200 text-[#1e293b] focus:border-[#e3ff6a] focus:ring-2 focus:ring-[#e3ff6a] outline-none"
+          required
+        />
+        <textarea
+          placeholder="Deja tu mensaje"
+          class="p-2 border border-gray-300 rounded-lg bg-gray-200 text-[#1e293b] focus:border-[#e3ff6a] focus:ring-2 focus:ring-[#e3ff6a] outline-none min-h-[150px]"
+          required
+        ></textarea>
+        <button
+          type="submit"
+          class="mt-4 px-6 py-2 bg-[#e3ff6a] text-[#0d1117] font-bold rounded-full hover:bg-[#a4ff7a] transition-colors"
+        >
+          ENVIAR
+        </button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1e293b] text-[#ffffff] text-center py-8 mt-8">
+      <p>&copy; 2025 Luis Fernando Portugal. Todos los Derechos Reservados.</p>
+    </footer>
+  </body>
+</html>
